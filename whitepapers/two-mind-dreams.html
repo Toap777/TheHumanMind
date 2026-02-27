@@ -31,6 +31,67 @@
     overflow-x: hidden;
   }
 
+  /* ── PDF SECTION ── */
+  .pdf-section {
+      padding: 6rem 2rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+    }
+
+    .pdf-inner {
+      max-width: 520px;
+    }
+
+    .pdf-eyebrow {
+      font-family: 'Syncopate', sans-serif;
+      font-size: 0.55rem;
+      letter-spacing: 0.4em;
+      color: var(--glow2);
+      opacity: 0.8;
+      margin-bottom: 1rem;
+      text-transform: uppercase;
+    }
+
+    .pdf-title {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 2rem;
+      font-weight: 300;
+      color: var(--light-core);
+      margin-bottom: 1rem;
+    }
+
+    .pdf-desc {
+      font-size: 1rem;
+      font-style: italic;
+      color: var(--dim);
+      line-height: 1.7;
+      margin-bottom: 2rem;
+    }
+
+    .pdf-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.6rem;
+      padding: 0.9rem 2rem;
+      border: 1px solid rgba(147, 200, 255, 0.35);
+      background: rgba(147, 200, 255, 0.06);
+      color: var(--glow);
+      font-family: 'Space Mono', monospace;
+      font-size: 0.75rem;
+      letter-spacing: 0.12em;
+      text-decoration: none;
+      text-transform: uppercase;
+      transition: border-color 0.3s, background 0.3s, color 0.3s;
+    }
+
+    .pdf-btn:hover {
+      border-color: rgba(147, 200, 255, 0.7);
+      background: rgba(147, 200, 255, 0.12);
+      color: var(--light-core);
+    }
+
   /* ── STARFIELD ── */
   #starfield {
     position: fixed;
@@ -674,7 +735,6 @@
 <section class="section">
   <p class="section-label">Theoretical Foundation</p>
   <h2 class="section-title">The Brain as a<br><em>Predictive Dreamer</em></h2>
-  <h2><a href="two-mind-dreams.pdf"> Read the whitepaper </a></h2>
   <div class="section-body">
     <p>Modern neuroscience reveals the brain not as a passive mirror of reality, but as an active simulation engine — continuously generating predictions about the world and correcting errors when they arise. This framework, most rigorously formalized in Karl Friston's Free Energy Principle, holds that every act of perception, every emotion, every social judgment is the brain's attempt to minimize prediction error.</p>
     <p>When early cinema audiences fled theaters from the sight of an approaching train — only a projection — they illustrated this principle vividly. Their predictive models screamed danger, overriding all abstract knowledge. The model dominated the reality.</p>
@@ -842,6 +902,24 @@
     <p>The framework's most immediate application is clinical: conflict therapists already work intuitively with these dynamics, but lack a shared structural vocabulary. Naming the specific model layer where conflict lives could allow for more precise, less emotionally reactive interventions.</p>
     <p>For individuals with Autistic Spectrum Disorder, the explicit architecture may offer something that social skills training typically cannot — not a set of rules to memorize, but a <em>causal map</em> explaining why conflicts arise and where to look when they do. ASD often makes the automatic, intuitive updating of social models effortful or opaque; making this architecture visible may offer meaningful relief.</p>
     <p>Finally, deception deserves treatment as a first-class subject. A deliberate lie is not merely communication — it is an act of model engineering, seeding inaccuracies into layers the recipient has no reason to distrust. When discovered, the sudden, involuntary revision of multiple submodels at once may produce the most destabilizing conflicts the framework can describe.</p>
+  </div>
+</section>
+
+<!-- PDF DOWNLOAD -->
+<section class="pdf-section">
+  <div class="pdf-inner reveal">
+    <p class="pdf-eyebrow">Full Paper</p>
+    <h3 class="pdf-title">Read the Complete Whitepaper</h3>
+    <p class="pdf-desc">The full theoretical framework including all nine chapters, references, and extended arguments.</p>
+    <a href="two-mind-dreams.pdf" class="pdf-btn" target="_blank" rel="noopener">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+        <path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/>
+        <polyline points="14 2 14 8 20 8"/>
+        <line x1="12" y1="12" x2="12" y2="18"/>
+        <line x1="9" y1="15" x2="15" y2="15"/>
+      </svg>
+      Download PDF
+    </a>
   </div>
 </section>
 
